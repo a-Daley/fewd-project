@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Grades</title>
+	<link rel="stylesheet" href="css/simple-grid.css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|SatisfyPetit+Formal+Script" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+ 	<nav>
+ 		<div class="col-1-2">
+ 			<p id="tagline"> What does that New York City restaurant grade mean?</p>
+ 		</div>
+ 		<div class="col-1-2">
+ 			<p id="contact"><a href="#">Contact Me</a></p>	
+ 		</div>
+ 	</nav>
+ 	<div class="col-1-1" class="search-bar-space">
+ 		<input type="text" id="search-bar" placeholder="search for restaurant"> 
+		<input type="text" id="search-bar-zipcode" placeholder="zip code"> 
+ 		<button id="search">Search</button>
+ 	</div>
+
+ 	<div class="col-1-3">
+ 		<div class="grade-options">
+ 			<p>A</p>
+ 		</div>
+ 		<div class="grade-descriptions"> 
+ 			<p class="grade-descriptions" id="a-grade-descrip">During its last inspection, this restaurant picked up <strong>13 or fewer</strong> health code violations.</p>
+ 		</div>
+
+ 	</div>
+
+ 	<div class="col-1-3">
+ 		<div class="grade-options">
+ 			<p>B</p>
+ 		</div>
+ 		<div class="grade-descriptions"> 
+ 			<p id="b-grade-descrip">During its last inspection, this restaurant picked up <strong>14 to 27</strong> health code violations.</p>
+ 		</div>
+ 	</div
+
+ 	<div class="col-1-3">
+ 		<div class="grade-options">
+ 			<p>C</p>
+ 		</div>
+ 		<div class="grade-descriptions"> 
+ 			<p id="c-grade-descrip">During its last inspection, this restaurant picked up <strong>more than 28</strong> health code violations.</p>
+ 		</div>
+ 	</div>
+
+ 	<div id="results-slider" class="overlay">
+ 	<a href="javascript:void(0)" class="closebtn">&times;</a>
+ 		<div class="results-content">
+ 			<div class="col-1-2">
+ 				<p class="grade-options" id="results-grade">C</p>
+ 				<p id="result-grade-descrip">During its last inspection, this restaurant picked up <strong>more than 28</strong> health code violations.</p>
+ 			</div>
+ 			<div class="col-1-2">
+ 				<h1 id="restaurant-name">Restaurant Name</h1>
+				<p>Location: <span id="restaurant-location"></span></p>
+		 		<p>Violations: <span id="restaurant-violations"></span></p>
+		 	</div>
+	 	</div>
+ 	</div>
+
+ 	<div class="col-1-1" id="footer">
+ 		Photo &#169; iStock Images</p>
+ 	</div>
+
+	<script type="text/javascript" src="js/jQuery.js"></script>	
+	<script type="text/javascript" src="js/project.js"></script>
+		
+</body>
+</html>

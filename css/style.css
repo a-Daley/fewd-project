@@ -1,0 +1,170 @@
+* {
+	font-family: 'Playfair Display', serif;
+}
+
+body {
+	background-image: url(img/restaurant-grade.jpg);
+	background-repeat: no-repeat;
+	background-position: 100%;
+	background-attachment: fixed;
+	background-size: 100%
+}
+
+nav {
+	background-color: #93806F;
+	height: 60px;
+
+}
+	
+#contact {
+	color: white;
+	text-align: right;
+	padding-right: 5px; 
+}
+
+#tagline {
+	font-family: 'Petit Formal Script', cursive; 
+	font-size: 20px;
+	text-align: left;
+	padding-left: 10px;
+	color: #fbe26e;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+strong {
+	color: red;
+}
+
+#search-bar {
+	width: 25%;
+	height: 40px;
+	outline: none;
+	margin-top: 200px;
+	margin-left: 200px;
+	font-size: 15px;
+	size: 20px;
+}
+
+#search-bar-zipcode {
+	width: 25%;
+	height: 40px;
+	outline: none;
+	margin-top: 200px;
+	margin-left: 0px;
+	font-size: 15px;
+	size: 20px;
+
+}
+
+/*  #search-bar:focus {
+	width: 25%;
+	border-style: none;
+} */
+
+button {
+	width: 80px;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	background-color: #B49C86;
+	position: relative;
+	color: #efedee;
+}
+
+.grade-options {
+	height: 225px; 
+	color: red;
+/*	background-color: white; */
+/*	height: 63px; */
+	font-size: 100px;
+	text-align: center;
+	border-radius: 50px;
+	border-bottom-style: solid;
+	display: inline-block;
+}
+
+#results-grade {
+	height: 225px; 
+	border-style: none;
+	margin: 0px;
+	height: 10px;
+}
+
+.grade-descriptions {
+	background-color: white;
+	margin: 0px;
+
+}
+
+
+#footer {
+	background-color: #93806F;
+	text-align: right;
+	height: 30px;
+	font-size: 10px;
+
+}
+
+/* The Overlay (background) */
+.overlay {
+	color: white;
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 0%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgba(107, 94, 81, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.results-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    height: 100%;
+    text-align: center; 
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.col-1-2 h1 {
+	font-size: 30px;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.closebtn a:focus {
+	color: red;
+	text-decoration: none;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+		.options {
+		display: inline;
+		color: red;
+		padding: 0px;
+		}
+
+}
