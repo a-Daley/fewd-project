@@ -12,7 +12,7 @@ body {
 
 nav {
 	background-color: #93806F;
-	height: 60px;
+	height: 70px;
 
 }
 	
@@ -24,8 +24,8 @@ nav {
 
 #tagline {
 	font-family: 'Petit Formal Script', cursive; 
-	font-size: 20px;
-	text-align: left;
+	font-size: 18px;
+	text-align: left center;
 	padding-left: 10px;
 	color: #fbe26e;
 }
@@ -36,7 +36,7 @@ nav a {
 }
 
 strong {
-	color: red;
+	color: #CC1616;
 }
 
 #search-bar {
@@ -77,7 +77,7 @@ button {
 
 .grade-options {
 	height: 225px; 
-	color: red;
+	color: #CC1616;
 /*	background-color: white; */
 /*	height: 63px; */
 	font-size: 100px;
@@ -88,7 +88,7 @@ button {
 }
 
 #results-grade {
-	height: 225px; 
+	font-size: 200px;
 	border-style: none;
 	margin: 0px;
 	height: 10px;
@@ -99,12 +99,16 @@ button {
 
 }
 
+#red-text {
+	color: #CC1616;
+}
 
 #footer {
 	background-color: #93806F;
 	text-align: right;
 	height: 30px;
 	font-size: 10px;
+	color: white;
 
 }
 
@@ -144,8 +148,8 @@ button {
     font-size: 60px;
 }
 
-.closebtn a:focus {
-	color: red;
+.closebtn a:visited {
+	color: #CC1616;
 	text-decoration: none;
 }
 
@@ -159,11 +163,29 @@ button {
     }
 }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 767px) 
+	{
+		body {
+			background-repeat: repeat-y;
+		}
+
 		.options {
 		display: inline;
-		color: red;
+		color: #CC1616;
 		padding: 0px;
 		}
+
+		.grade-options {
+			text-align: center;
+		}
+
+		#search-bar {
+			margin-left: 10px;
+		}
+
+		#search-bar-zipcode {
+			margin-left: 0px;
+
+}
 
 }
