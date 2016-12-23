@@ -39,6 +39,14 @@ strong {
 	color: #CC1616;
 }
 
+#restaurant-name {
+	text-transform: capitalize;
+}
+
+#restaurant-location {
+	text-decoration: capitalize;
+}
+
 #search-bar {
 	width: 25%;
 	height: 40px;
