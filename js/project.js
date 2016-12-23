@@ -15,20 +15,20 @@ $("button#search").on("click", function(){
 		}
 		var onlyWithGrades = data.filter(function(gradingEvent) {
 				return gradingEvent["grade"];})
-		console.log(onlyWithGrades);
+//		console.log(onlyWithGrades);
 		if (_.size(onlyWithGrades) == 0) {
 			alert("No restaurant found. Try again!");
 		}
 		var sortedOnlyWithGrades = _.sortBy(onlyWithGrades, function(gradingEvent) {
 			return new Date(gradingEvent["grade_date"]);
 		})
-		console.log(sortedOnlyWithGrades);		
+//		console.log(sortedOnlyWithGrades);		
 		var lastEntry = _.last(sortedOnlyWithGrades) 
-		console.log(lastEntry);
+//		console.log(lastEntry);
 		var restaurantBoro = lastEntry["boro"];
-		console.log(restaurantBoro);
+//		console.log(restaurantBoro);
 		var restaurantLocation = lastEntry["boro"] + " (" + lastEntry["zipcode"] + ")";
-		console.log(restaurantLocation);
+//		console.log(restaurantLocation);
 		$("h1#restaurant-name").text(restaurantName);
 		$("span#restaurant-location").text(restaurantLocation);
 		$("span#restaurant-violations").text(lastEntry["violation_description"]);
@@ -59,6 +59,7 @@ $("button#search").on("click", function(){
 
 		findGradeDescrip(restaurantGrade);
 		$("p#result-grade-descrip").text
+//		this is the part of the code that moves the 		slide up
 		$("div.results-slider").toggleClass("div.close-slider");
 		$(".overlay").css("height", "90%");
 	})
